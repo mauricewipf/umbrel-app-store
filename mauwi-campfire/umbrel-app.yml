@@ -1,9 +1,10 @@
-manifestVersion: 1.1
+manifestVersion: 1
 id: mauwi-campfire
-category: social
 name: Campfire
-version: "1.0.0"
 tagline: Self-hosted chat for teams
+icon: https://svgur.com/i/mvA.svg
+category: social
+version: "1.0.0"
 description: >-
   Campfire is a web-based chat application for teams. Run your own private chat server with all the features you need.
 
