@@ -2,7 +2,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: campfire_server_1
-      APP_PORT: 80
+      APP_PORT: 8001
       PROXY_AUTH_ADD: 'false'
     container_name: campfire_app_proxy_1
 
