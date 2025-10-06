@@ -51,9 +51,9 @@ repo: https://github.com/basecamp/campfire
 support: https://github.com/basecamp/campfire/issues
 port: 80
 gallery: [
-  - assets/campfire-01.jpeg
-  - assets/campfire-02.jpeg
-  - assets/campfire-03.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
 ]
 path: ""
 defaultUsername: ""
