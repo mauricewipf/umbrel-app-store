@@ -52,9 +52,9 @@ support: https://github.com/basecamp/campfire/issues
 port: 8001
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
-  - assets/campfire-01.jpeg
-  - assets/campfire-02.jpeg
-  - assets/campfire-03.jpeg
+  - https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/campfire-01.jpeg
+  - https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/campfire-02.jpeg
+  - https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/campfire-03.jpeg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
