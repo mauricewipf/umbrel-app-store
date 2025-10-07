@@ -58,6 +58,3 @@ services:
           memory: 256M
           cpus: '0.25'
     restart: on-failure
-    sysctls:
-      - net.core.somaxconn=511
-      - vm.overcommit_memory=1
