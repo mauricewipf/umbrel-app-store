@@ -50,11 +50,10 @@ dependencies: []
 repo: https://github.com/basecamp/campfire
 support: https://github.com/basecamp/campfire/issues
 port: 8001
-gallery: [
+gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
-]
 path: ""
 defaultUsername: ""
 defaultPassword: ""
