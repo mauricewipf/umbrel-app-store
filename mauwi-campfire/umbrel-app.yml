@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mauwi-campfire
 name: Campfire
 tagline: Self-hosted chat for teams
-icon: https://svgur.com/i/mvA.svg
+icon: https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/logo-campfire.png
 category: social
 version: "0.1.0"
 description: >-
@@ -44,11 +44,11 @@ releaseNotes: >-
   - Search and notifications
 
   - Bot API support
-developer: Basecamp
-website: https://github.com/basecamp/campfire
+developer: Maurice Wipf
+website: https://github.com/mauricewipf/campfire-umbrel
 dependencies: []
-repo: https://github.com/basecamp/campfire
-support: https://github.com/basecamp/campfire/issues
+repo: https://github.com/mauricewipf/campfire-umbrel
+support: https://github.com/mauricewipf/campfire-umbrel/issues
 port: 8001
 gallery:
   - https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/campfire-01.jpeg
