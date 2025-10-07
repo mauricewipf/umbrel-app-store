@@ -32,6 +32,16 @@ description: >-
 
 
   On first launch, you'll be guided through creating an admin account. This admin can then invite other users and manage rooms and permissions.
+developer: Basecamp
+website: https://github.com/basecamp/campfire
+submitter: mauricewipf
+submission: "https://github.com/mauricewipf/mauwi-hello-campfire"
+repo: https://github.com/basecamp/campfire
+support: https://github.com/basecamp/campfire/issues
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Initial release of Campfire for Umbrel.
 
@@ -45,18 +55,6 @@ releaseNotes: >-
   - Search and notifications
 
   - Bot API support
-developer: Basecamp
-website: https://github.com/basecamp/campfire
-submitter: mauricewipf
-submission: "https://github.com/mauricewipf/mauwi-hello-campfire"
-repo: https://github.com/basecamp/campfire
-support: https://github.com/basecamp/campfire/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-releaseNotes: >-
-  Add what's new in the latest version of your app here.
 dependencies: []
 path: ""
 defaultUsername: ""
