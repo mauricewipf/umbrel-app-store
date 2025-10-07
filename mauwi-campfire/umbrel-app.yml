@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mauwi-campfire
 name: Campfire
 tagline: Self-hosted chat for teams
-icon: https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/logo-campfire.png
+icon: https://raw.githubusercontent.com/mauricewipf/campfire-umbrel/refs/heads/main/assets/logo-campfire.png
 category: social
 version: "0.1.0"
 description: >-
@@ -51,9 +51,9 @@ repo: https://github.com/mauricewipf/campfire-umbrel
 support: https://github.com/mauricewipf/campfire-umbrel/issues
 port: 8001
 gallery:
-  - https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/campfire-01.jpeg
-  - https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/campfire-02.jpeg
-  - https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-campfire/assets/campfire-03.jpeg
+  - https://raw.githubusercontent.com/mauricewipf/campfire-umbrel/refs/heads/main/assets/campfire-01.jpeg
+  - https://raw.githubusercontent.com/mauricewipf/campfire-umbrel/refs/heads/main/assets/campfire-02.jpeg
+  - https://raw.githubusercontent.com/mauricewipf/campfire-umbrel/refs/heads/main/assets/campfire-03.jpeg
 path: ""
 defaultUsername: ""
 defaultPassword: ""
