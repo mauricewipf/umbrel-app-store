@@ -1,23 +1,56 @@
 manifestVersion: 1
 id: mauwi-hello-campfire
-name: Hello Campfire
-tagline: Replace this tagline with your app's tagline
+name: Campfire
+tagline: Self-hosted chat for teams
 icon: https://svgur.com/i/mvA.svg
-category: Development
+category: social
 version: "1.0.0"
 port: 4000
 description: >-
-  Add your app's description here.
+  Campfire is a web-based chat application for teams. Run your own private chat server with all the features you need.
 
 
-  You can also add newlines!
+  Features:
 
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+  - Multiple chat rooms with access controls
+
+  - Direct messages between users
+
+  - File attachments with image and video previews
+
+  - Search across all messages
+
+  - Web Push notifications
+
+  - @mentions to notify specific users
+
+  - API with support for bot integrations
+
+  - Modern, responsive web interface
+
+  - Self-hosted and privacy-focused
+
+
+  On first launch, you'll be guided through creating an admin account. This admin can then invite other users and manage rooms and permissions.
+releaseNotes: >-
+  Initial release of Campfire for Umbrel.
+
+
+  - Full chat functionality with rooms and direct messages
+
+  - File sharing with previews
+
+  - Real-time updates via WebSockets
+
+  - Search and notifications
+
+  - Bot API support
+developer: Basecamp
+website: https://github.com/basecamp/campfire
+submitter: mauricewipf
+submission: "https://github.com/mauricewipf/mauwi-hello-campfire"
+repo: https://github.com/basecamp/campfire
+support: https://github.com/basecamp/campfire/issues
 gallery:
   - https://i.imgur.com/yyVG0Jb.jpeg
   - https://i.imgur.com/yyVG0Jb.jpeg
