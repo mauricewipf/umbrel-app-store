@@ -6,7 +6,6 @@ services:
       APP_HOST: mauwi-campfire_server_1
       APP_PORT: 8001
       PROXY_AUTH_ADD: 'false'
-    container_name: campfire_app_proxy_1
 
   server:
     image: mauricewipf/campfire-umbrel:latest
@@ -39,7 +38,6 @@ services:
           memory: 2G
           cpus: '1'
     restart: on-failure
-    container_name: campfire_server_1
 
   redis:
     image: redis:7-alpine
@@ -60,4 +58,3 @@ services:
           memory: 256M
           cpus: '0.25'
     restart: on-failure
-    container_name: campfire_redis_1
