@@ -4,7 +4,7 @@ name: Campfire
 tagline: Self-hosted chat for teams
 icon: https://svgur.com/i/mvA.svg
 category: social
-version: "1.0.0"
+version: "0.1.0"
 description: >-
   Campfire is a web-based chat application for teams. Run your own private chat server with all the features you need.
 
