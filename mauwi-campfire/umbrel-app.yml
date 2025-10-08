@@ -48,15 +48,15 @@ widgets:
   - id: "health"
     type: "text-with-progress"
     refresh: "5s"
-    endpoint: "app:80/api/health"
+    endpoint: "app:80/api/widget/up"
     link: ""
     example:
       type: "text-with-progress"
       link: ""
       title: "Campfire Healthcheck"
-      text: "200 OK"
+      text: "Healthy"
       progress: 1.0
-      progressLabel: "OK"
+      progressLabel: "200 OK"
   - id: "pinned-chat"
     type: "text-with-buttons"
     refresh: "5s"
