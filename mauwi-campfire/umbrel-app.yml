@@ -44,6 +44,52 @@ releaseNotes: >-
   - Search and notifications
 
   - Bot API support
+widgets:
+  - id: "health"
+    type: "text-with-progress"
+    refresh: "5s"
+    endpoint: "app:80/api/health"
+    link: ""
+    example:
+      type: "text-with-progress"
+      link: ""
+      title: "Healthcheck"
+      text: "200 OK"
+      progress: 1.0
+      progressLabel: "OK"
+  - id: "pinned-chat"
+    type: "text-with-buttons"
+    refresh: "5s"
+    endpoint: "app:80/api/widget/pinned-chat"
+    link: ""
+    example:
+      type: "text-with-buttons"
+      link: ""
+      title: "Your Pinned Chat Channel"
+      text: "You're right. I agree that ..."
+      subtext: "Maurice"
+      buttons:
+        - text: "Reply"
+          icon: "arrow-down-right"
+          link: "?action=send-message"
+        - text: "View"
+          icon: "arrow-up-right"
+          link: "?action=receive-message"
+  - id: "recent-messages"
+    type: "list"
+    refresh: "5s"
+    endpoint: "app:80/api/widget/recent-messages"
+    link: ""
+    example:
+      type: "list"
+      link: ""
+      items:
+        - text: "You're right. I agree that ..."
+          subtext: "Maurice"
+        - text: "woop! glad it arrived before ..."
+          subtext: "Christine"
+        - text: "I'm not sure if I understand ..."
+          subtext: "Stefan"
 developer: Maurice Wipf
 website: https://github.com/mauricewipf/campfire-umbrel
 dependencies: []
