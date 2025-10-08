@@ -53,7 +53,7 @@ widgets:
     example:
       type: "text-with-progress"
       link: ""
-      title: "Healthcheck"
+      title: "Campfire Healthcheck"
       text: "200 OK"
       progress: 1.0
       progressLabel: "OK"
