@@ -21,7 +21,7 @@ website: https://github.com/mauricewipf/ai-chat-translator
 dependencies: []
 repo: https://github.com/mauricewipf/ai-chat-translator
 support: https://github.com/mauricewipf/ai-chat-translator/issues
-port: 8001
+port: 8002
 gallery:
   - https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/assets/ui-desktop-01.png
 path: ""
