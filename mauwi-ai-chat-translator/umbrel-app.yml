@@ -1,0 +1,31 @@
+manifestVersion: 1
+id: mauwi-ai-chat-translator
+name: AI Chat Translator
+tagline: Self-hosted AI chat translator
+icon: https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/assets/icon.png
+category: social
+version: "0.1.0"
+description: >-
+  AI Chat Translator is a web-based AI chat translator.
+
+  Features:
+  - Translate chat messages to and from multiple languages
+  - Real-time translation
+  - Multiple languages supported
+  - Self-hosted and privacy-focused
+releaseNotes: >-
+  Initial release of AI Chat Translator for Umbrel.
+  
+developer: Maurice Wipf
+website: https://github.com/mauricewipf/ai-chat-translator
+dependencies: []
+repo: https://github.com/mauricewipf/ai-chat-translator
+support: https://github.com/mauricewipf/ai-chat-translator/issues
+port: 8001
+gallery:
+  - https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/assets/ui-desktop-01.png
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: mauricewipf
+submission: ""
