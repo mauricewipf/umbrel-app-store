@@ -1,7 +1,7 @@
 services:
   app_proxy:
     environment:
-      APP_HOST: denny-bitaxe_web_1
+      APP_HOST: mauwi-bitaxe_web_1
       APP_PORT: 3000
       PROXY_AUTH_ADD: "false"
   web:
