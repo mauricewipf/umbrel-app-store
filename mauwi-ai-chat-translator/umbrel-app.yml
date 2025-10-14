@@ -24,6 +24,8 @@ support: https://github.com/mauricewipf/ai-chat-translator/issues
 port: 8002
 gallery:
   - https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/assets/ui-desktop-01.png
+  - https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/assets/ui-desktop-02.png
+  - https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/assets/ui-desktop-03.png
 path: ""
 defaultUsername: ""
 defaultPassword: ""

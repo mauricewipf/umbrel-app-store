@@ -10,10 +10,6 @@ services:
 
   server:
     image: mauricewipf/ai-chat-translator:latest
-    secrets:
-      - openai_api_key
+    environment:
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
     restart: unless-stopped
-
-secrets:
-  openai_api_key:
-    file: ./.openai_api_key
