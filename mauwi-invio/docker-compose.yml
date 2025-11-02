@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: mauwi-invio_frontend_1
-      APP_PORT: 8003
+      APP_PORT: 8000
 
   backend:
     image: ghcr.io/kittendevv/invio-backend:latest
@@ -23,7 +23,7 @@ services:
   frontend:
     image: ghcr.io/kittendevv/invio-frontend:latest
     environment:
-      PORT: ${FRONTEND_PORT_INTERNAL:-8003}
+      PORT: ${FRONTEND_PORT_INTERNAL:-8000}
       BACKEND_URL: ${BACKEND_URL:-http://backend:3000}
       FRONTEND_SECURE_HEADERS_DISABLED: ${FRONTEND_SECURE_HEADERS_DISABLED:-false}
       ENABLE_HSTS: ${ENABLE_HSTS:-false}
