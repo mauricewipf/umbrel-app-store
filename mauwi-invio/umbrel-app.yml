@@ -19,7 +19,7 @@ website: https://github.com/kittendevv/invio
 dependencies: []
 repo: https://github.com/kittendevv/invio
 support: https://github.com/kittendevv/invio/issues
-port: 8101
+port: 8003
 gallery: []
 path: ""
 defaultUsername: admin
