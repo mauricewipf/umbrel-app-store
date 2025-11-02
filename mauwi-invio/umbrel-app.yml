@@ -4,7 +4,7 @@ category: finance
 name: Invio
 version: "latest"
 tagline: Self-hosted application platform
-icon: https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/mauwi-invio/main/icon.png
+icon: https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-invio/icon.png
 description: >-
   Invio is a self-hosted application with a modern web interface. It features
   a backend API service and a frontend web application, providing a complete
