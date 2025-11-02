@@ -3,7 +3,7 @@ services:
   app_proxy:
     environment:
       APP_HOST: mauwi-invio_frontend_1
-      APP_PORT: 8003
+      APP_PORT: 8004
 
   backend:
     image: ghcr.io/kittendevv/invio-backend:latest
@@ -32,5 +32,5 @@ services:
     depends_on:
       - backend
     ports:
-      - "${FRONTEND_PORT:-8003}:${FRONTEND_PORT_INTERNAL:-8000}"
+      - "${FRONTEND_PORT:-8004}:${FRONTEND_PORT_INTERNAL:-8000}"
     restart: unless-stopped
