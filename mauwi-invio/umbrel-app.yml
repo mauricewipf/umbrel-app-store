@@ -2,12 +2,12 @@ manifestVersion: 1
 id: mauwi-invio
 category: finance
 name: Invio
-version: "latest"
+version: "0.1.0"
 tagline: Self-hosted application platform
 icon: https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-invio/icon.png
 description: >-
   Invio is a self-hosted application with a modern web interface. It features
-  a backend API service and a frontend web application, providing a complete
+  a frontend web application, providing a complete
   solution for managing your data and workflows.
 
   The application includes secure authentication, session management, and
