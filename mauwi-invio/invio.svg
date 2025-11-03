@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256px" height="256px" viewBox="0 0 512 512" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>invio-icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="invio-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="icon" transform="translate(110.000000, 68.000000)" stroke="#D6B4FC" stroke-width="41.6667">
+            <path d="M0.166618347,375.500031 L0.166618347,42.1666489 C0.166618347,19.154808 18.8215256,0.500026703 41.8333588,0.500026703 L250.166626,0.500026703 C273.178589,0.500026703 291.833374,19.154808 291.833374,42.1666489 L291.833374,375.500031 L229.333374,333.833405 L187.666626,375.500031 L145.999985,333.833405 L104.333359,375.500031 L62.6666107,333.833405 L0.166618347,375.500031 Z M83.4999847,83.8334045 L208.5,83.8334045 L83.4999847,83.8334045 Z M83.4999847,167.166656 L208.5,167.166656 L83.4999847,167.166656 Z M166.833374,250.500031 L208.5,250.500031 L166.833374,250.500031 Z" id="Shape"></path>
+        </g>
+    </g>
+</svg>
