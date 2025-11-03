@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mauwi-invio
 category: finance
 name: Invio
-version: "0.1.0"
+version: "1.0.0"
 tagline: Self-hosted application platform
 icon: https://raw.githubusercontent.com/mauricewipf/umbrel-app-store/refs/heads/main/mauwi-invio/icon.png
 description: >-
