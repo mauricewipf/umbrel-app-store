@@ -1,0 +1,48 @@
+manifestVersion: 1
+id: mauwi-bitwarden
+name: Bitwarden
+tagline: Self-hosted password manager
+icon: https://avatars.githubusercontent.com/u/15990069?s=200
+category: security
+version: "1.0.0"
+description: >-
+  Bitwarden is a secure and free password manager for all of your devices. Store, share, and sync sensitive data with end-to-end encryption.
+
+
+  Features:
+
+  - Secure password vault with military-grade encryption
+
+  - Store passwords, credit cards, identities, and secure notes
+
+  - Password generator for creating strong, unique passwords
+
+  - Cross-platform support (web, mobile, desktop, browser extensions)
+
+  - Secure password sharing with other users
+
+  - Two-factor authentication (2FA) support
+
+  - Import from other password managers
+
+  - Self-hosted for complete control of your data
+
+  - Bitwarden Send for secure ephemeral sharing
+
+  - Password breach monitoring and reports
+
+
+  On first launch, create your master account to start storing your passwords securely. Your data is encrypted with your master password before it leaves your device.
+releaseNotes: ""
+developer: Maurice Wipf
+website: https://bitwarden.com
+dependencies: []
+repo: https://github.com/bitwarden/self-host
+support: https://bitwarden.com/help
+port: 8004
+gallery: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""
+submitter: mauricewipf
+submission: ""

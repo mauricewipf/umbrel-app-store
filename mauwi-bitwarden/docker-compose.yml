@@ -1,0 +1,43 @@
+services:
+
+  app_proxy:
+    environment:
+      APP_HOST: mauwi-bitwarden_server_1
+      APP_PORT: 443
+      PROXY_AUTH_ADD: 'false'
+
+  server:
+    depends_on:
+      - db
+    environment:
+      BW_DOMAIN: ${APP_DOMAIN}
+      BW_DB_PROVIDER: "mysql"
+      BW_DB_SERVER: "db"
+      BW_DB_DATABASE: "bitwarden_vault"
+      BW_DB_USERNAME: "bitwarden"
+      BW_DB_PASSWORD: ${APP_PASSWORD}
+      # Get your ID and key from https://bitwarden.com/host/
+      # BW_INSTALLATION_ID: ""
+      # BW_INSTALLATION_KEY: ""
+      BW_ENABLE_SSL: "true"
+      # BW_ENABLE_SSL_CA: "true"
+      # BW_SSL_CERT: "ssl.crt"
+      # BW_SSL_KEY: "ssl.key"
+      # BW_SSL_CA_CERT: "ca.crt"
+    image: ghcr.io/bitwarden/self-host:latest
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/app:/etc/bitwarden
+      - ${APP_DATA_DIR}/data/logs:/var/log/bitwarden
+
+  # MariaDB Example
+  db:
+    environment:
+      MARIADB_USER: "bitwarden"
+      MARIADB_PASSWORD: ${APP_PASSWORD}
+      MARIADB_DATABASE: "bitwarden_vault"
+      MARIADB_RANDOM_ROOT_PASSWORD: "true"
+    image: mariadb:10
+    restart: on-failure
+    volumes:
+      - ${APP_DATA_DIR}/data/db:/var/lib/mysql
