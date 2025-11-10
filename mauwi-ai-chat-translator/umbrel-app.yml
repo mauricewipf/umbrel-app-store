@@ -2,7 +2,7 @@ manifestVersion: 1
 id: mauwi-ai-chat-translator
 name: AI Chat Translator
 tagline: Self-hosted AI chat translator
-icon: https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/assets/icon.png
+icon: https://raw.githubusercontent.com/mauricewipf/ai-chat-translator/refs/heads/master/public/icon-1024x1024.png
 category: social
 version: "0.1.0"
 description: >-
