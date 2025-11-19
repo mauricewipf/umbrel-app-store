@@ -6,8 +6,26 @@ services:
       APP_PORT: 3001
       PROXY_AUTH_ADD: 'false'
 
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    # ports:
+    #   - "6379:6379"
+    volumes:
+      - redis-data:/data
+    command: redis-server --appendonly yes
+    healthcheck:
+      test: [ "CMD", "redis-cli", "ping" ]
+      interval: 5s
+      timeout: 3s
+      retries: 5
+
   server:
     image: ghcr.io/mauricewipf/ai-chat-translator:latest
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY:-INSERT_DEFAULT_API_KEY_HERE}
+      # REDIS_URL: redis://redis:6379
+    depends_on:
+      redis:
+        condition: service_healthy
     restart: unless-stopped
