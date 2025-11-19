@@ -9,8 +9,6 @@ services:
   redis:
     image: redis:7-alpine
     restart: unless-stopped
-    # ports:
-    #   - "6379:6379"
     volumes:
       - ${APP_DATA_DIR}/data/redis:/data
     command: redis-server --appendonly yes
@@ -24,7 +22,7 @@ services:
     image: ghcr.io/mauricewipf/ai-chat-translator:latest
     environment:
       OPENAI_API_KEY: ${OPENAI_API_KEY:-INSERT_DEFAULT_API_KEY_HERE}
-      # REDIS_URL: redis://redis:6379
+      REDIS_URL: redis://redis:6379
     depends_on:
       redis:
         condition: service_healthy
