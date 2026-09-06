@@ -1,0 +1,18 @@
+# Umbrel overlay over the shipped dsh Web composition.
+# Applied via `dsh --patch /app/umbrel.patch.yml`.
+#
+# A patch replaces the targeted row's whole `config`, so every key the row
+# owns is restated here. `inject` is preserved from the original row, so
+# `ctx.webStartup` (CLI flags) stays available inside `!!js` expressions.
+
+# Bind all interfaces so Docker bridge networking and Umbrel's app_proxy can
+# reach the server. The CLI layer intentionally rejects `--host 0.0.0.0`, so
+# this patch is the supported path: the webserver schema itself allows both
+# loopback and all-interfaces binds.
+- id: webserver
+  config:
+    host: '0.0.0.0'
+    port: !!js ctx.webStartup.port ?? Number(process.env.DSH_PORT ?? 3080)
+    compression: gzip
+    compressionLevel: 1
+    compressionThresholdBytes: 1024
