@@ -8,8 +8,17 @@ DSH_HOME="${DSH_HOME:-/data/.dsh}"
 DSH_WORKSPACE="${DSH_WORKSPACE:-/data/workspace}"
 DSH_PORT="${DSH_PORT:-3080}"
 PATCH_FILE="${DSH_PATCH_FILE:-/app/umbrel.patch.yml}"
+# Optional stdout tee for the token-aware proxy sidecar: when DSH_LOG_FILE is
+# set, dsh's output is copied there (in addition to stdout) so the proxy can
+# scrape the current launch token without weakening dsh's own auth.
+LOG_FILE="${DSH_LOG_FILE:-}"
 
 mkdir -p "$DSH_HOME" "$DSH_WORKSPACE"
+if [[ -n "$LOG_FILE" ]]; then
+  mkdir -p "$(dirname "$LOG_FILE")"
+  # Truncate stale tokens from a previous container lifetime on this volume.
+  : > "$LOG_FILE" 2>/dev/null || true
+fi
 cd "$DSH_WORKSPACE"
 
 export DSH_HOME DSH_PORT
@@ -45,6 +54,11 @@ if [[ "${1:-web}" == "web" ]]; then
   # passed as a launcher flag before the profile. Everything after the
   # launcher flags belongs to the web app. Forward any extra args.
   shift || true
+  if [[ -n "$LOG_FILE" ]]; then
+    # tee keeps SIGTERM delivery intact (dsh = direct child of this shell;
+    # `exec` preserves PID 1; compose-level init reaps the tee).
+    exec > >(tee -a "$LOG_FILE") 2>&1
+  fi
   exec dsh \
     --patch "$PATCH_FILE" \
     --profile web \
