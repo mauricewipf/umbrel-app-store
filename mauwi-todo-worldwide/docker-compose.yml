@@ -1,0 +1,18 @@
+services:
+  app_proxy:
+    environment:
+      APP_HOST: mauwi-todo-worldwide_web_1
+      APP_PORT: 3000
+      PROXY_AUTH_ADD: "false"
+
+  web:
+    image: mauricewipf/todo-worldwide:1.0.0@sha256:aba29dcfb627cc294ba68d8e0682ca39c541c7013be0752757b9467dcbf29589
+    restart: on-failure
+    stop_grace_period: 1m
+    volumes:
+      - ${APP_DATA_DIR}/data:/data
+    environment:
+      APP_PASSWORD: $APP_PASSWORD
+      DATA_DIR: /data
+      PORT: 3000
+      TRUST_PROXY: "true"
